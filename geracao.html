@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Qual é sua geração</title>
+</head>
+
+<body>
+    <script>
+
+        var dataAtual = new Date();
+        var ano = dataAtual.getFullYear();
+
+        var linha = function () {
+            document.write("<hr>");
+        }
+
+        var mostraFrase = function (frase) {
+            document.write(frase);
+            linha();
+        }
+
+        var idade = parseInt(prompt("Informe o ano do seu nascimento : "))
+        mostraFrase(idade);
+
+        if (idade >= 1928 && idade <= 1945) {
+            document.write("Silent Generation");
+            linha();
+        } else if (idade >= 1946 && idade <= 1964) {
+            document.write("Baby Boomers");
+            linha();
+        } else if (idade >= 1965 && idade <= 1980) {
+            document.write("Geração X");
+            linha();
+        } else if (idade >= 1981 && idade <= 1996) {
+            document.write("Millennials");
+            linha();
+        } else if (idade >= 1997 && idade <= 2012) {
+            document.write("Geração Z");
+            linha();
+        } else if (idade >= 2013 && idade <= ano) {
+            document.write("Geração Alpha");
+            linha();
+        } else if (idade < 1928) {
+            document.write("Sua idade é " + (ano - idade) + " você esta muito velho :P");
+            linha();
+        } else {
+            document.write("Você ainda não nasceu :P");
+            linha();
+        }
+    </script>
+</body>
+
+</html>

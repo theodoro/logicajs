@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Média de idade</title>
+    </head>
+    <body>
+        <script>
+            var eu = 38;
+            var wife = 41;
+            var brother = 36;
+            var total = (eu+wife+brother);
+
+            // essa conversão ignora a parte decimal, ou seja, 4,7 se torna 4
+
+            var media = parseInt(total / 3); 
+
+            // essa conversão arrendonda para cima, ou seja, 4,4 se torna 5
+
+            document.write("Media de idade: " + media);
+            var numeroQuebrado = 38.1234565
+            document.write("<br>numero quebrado: " + Math.round(numeroQuebrado));
+
+        </script>
+    </body>
+</html>

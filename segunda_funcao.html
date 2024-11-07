@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="utf-8">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trabalhando com funções</title>
+</head>
+
+<body>
+    <script>
+
+        var tracaLinha = function () {
+            document.write("<hr>");
+        }
+
+        var mostra = function (frase) {
+            document.write(frase);
+            tracaLinha();
+        }
+
+
+        var entrada = prompt("Informe seu nome completo: ");
+        mostra(entrada);
+        var entrada2 = parseInt (prompt ("Informe sua idade: "))
+        mostra(entrada2);
+
+        if (entrada2 >= 28 && entrada2 <=43 ){
+            document.write("Você é da geração Y ou Millennials nascido entre 1981 e 1996");
+            tracaLinha();
+        }else{
+            document.write("Você pertece a outra geração. Talvez você seja mais novo =)");
+            tracaLinha();
+        }
+    </script>
+</body>
+
+</html>

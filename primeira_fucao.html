@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h3>Praticando função</h3>
+</body>
+
+<script>
+    var pulaLinha = function () {
+        document.write("<br><hr><br>")
+    }
+
+    var mostra = function (frase) {
+        document.write("<big>" + frase + "</big>" + "<br>");
+        pulaLinha();
+    }
+
+    var frase1 = prompt("Digite um frase: ");
+
+    mostra(frase1);
+    mostra("Sou casado com Sumara");
+    console.log("Essa mensagem só aparece no console");
+</script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt_BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calcula consumo</title>
+</head>
+
+<body>
+    <h3>Etanol ou Gasolina</h3>
+    <script>
+
+        var pulaLinha = function () {
+            document.write("<hr>");
+        }
+
+        const tanque = 40;
+        const caminhoComGasolina = 480;
+        const caminhoComEtanol = 300;
+        var consumoMedio = (caminhoComGasolina / tanque);
+        var consumoEtanol = (caminhoComEtanol / tanque);
+
+        document.write("O consumo médio da viagem com gasolina foi: " + consumoMedio + "<br> e com Etanol foi: " + consumoEtanol);
+        pulaLinha();
+
+
+        // Preço por consumo
+
+        var precoGaso = 6.50;
+        var precoEtanol = 5.99;
+
+        var precoPorKilometroE = precoEtanol / consumoEtanol;
+        var precoPorKilometroG = precoGaso / consumoMedio;
+
+        document.write("Preço consumo Etanol :" + precoPorKilometroE.toFixed(2));
+        pulaLinha();
+        document.write("Preço consumo Gasolina :" + precoPorKilometroG.toFixed(2));
+        pulaLinha();
+
+
+        if (precoPorKilometroG > precoPorKilometroE) {
+            document.write("Gasolina tem consumo <strong>maior</strong>")
+        } else {
+            document.write("Etanol tem consumo <strong>maior</strong>")
+        }
+
+    </script>
+</body>
+
+</html>
