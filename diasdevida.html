@@ -10,17 +10,22 @@
 <body>
     <script>
 
-        var calculaDiasDeVida = function(idade){
+        var calculaDiasDeVida = function (idade) {
             return idade * 365
         }
 
+        var batimentosPeople = function(dias){
+            return dias * 24 * 60 * 80;
+        }
+
         var idade = parseInt(prompt("Informe dua idade :"));
-       
+
         document.write("Você já viu " + "<strong>" + calculaDiasDeVida(idade) + "</strong>" + " de vida!");
 
         document.write("<br>");
-        var batimentos = calculaDiasDeVida(idade) * 24 * 60 * 80;
-        document.write("Seu coração já bateu " + batimentos + " vezes. Haja coração!")
+
+        var diasVida = calculaDiasDeVida(idade);
+        document.write("Seu coração já bateu " + batimentosPeople(diasVida) + " vezes. Haja coração!")
     </script>
 </body>
 

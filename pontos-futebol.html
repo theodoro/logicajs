@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pontos no campeoanto</title>
+</head>
+
+<body>
+    <script>
+        function vitorias() {
+            var qtdev = parseInt(prompt("informe a quantidade de vitorias do seu time: "));
+            return qtdev * 3;
+        }
+
+        function empates() {
+            var qtdeE = parseInt(prompt("informe a quantidade de empates do time:"));
+            return qtdeE;
+        }
+
+        function saldo() {
+            var saldo = vitorias() + empates();
+            document.write("Seu time ficou com " + saldo + " pontos");
+
+            if (saldo <= 30) {
+                document.write("Times esta na zona de rebaixamento")
+            } else {
+                document.write("Time esta LEGAL!!!")
+            }
+        }
+
+        saldo();
+
+
+
+    </script>
+</body>
+
+</html>
