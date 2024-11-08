@@ -9,12 +9,17 @@
 
 <body>
     <script>
+
+        var calculaDiasDeVida = function(idade){
+            return idade * 365
+        }
+
         var idade = parseInt(prompt("Informe dua idade :"));
-        var dias = idade * 365;
-        document.write("Você já viu " + "<strong>" + dias + "</strong>" + " de vida!");
+       
+        document.write("Você já viu " + "<strong>" + calculaDiasDeVida(idade) + "</strong>" + " de vida!");
 
         document.write("<br>");
-        var batimentos = dias * 24 * 60 * 80;
+        var batimentos = calculaDiasDeVida(idade) * 24 * 60 * 80;
         document.write("Seu coração já bateu " + batimentos + " vezes. Haja coração!")
     </script>
 </body>
