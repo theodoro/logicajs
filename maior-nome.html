@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Fácil 1- Faça um programa que peça dois números e verifique (usando if e else) e imprima o maior deles  </title>
+    </head>
+    <body>
+        <script>
+            var nome = prompt("Informe o primeiro nome");
+            var nome2 = prompt("Informe o segundo nome");
+
+            if (nome.length > nome2.length){
+                document.write("O " + nome + " é maior que o " + nome2);
+            }else if(nome2.length > nome.length){
+                document.write("O " + nome2 + " é maior que o " + nome);
+            }else{
+                document.write("Nomes possuem o mesmo tamanho!");
+            }
+        </script>
+    </body>
+</html>
