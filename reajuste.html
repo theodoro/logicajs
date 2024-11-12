@@ -10,6 +10,10 @@
 <body>
     <script>
 
+        function pula(){
+            document.write("<hr>");
+        }
+
         var novosalario;
         var aumento;
         var salario;
@@ -34,11 +38,11 @@
             }
 
             document.write("Salario antes: " + salario.toFixed(2));
-            document.write("<br>");
+            pula();
             document.write("Valor do aumento: " + aumento.toFixed(2));
-            document.write("<br>");
+            pula();
             document.write("% Aplicado: " + percentual);
-            document.write("<br>");
+            pula();
             document.write("Novo salário: " + novosalario.toFixed(2));
         }
 
