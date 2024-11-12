@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reajuste de salário</title>
+</head>
+
+<body>
+    <script>
+
+        var novosalario;
+        var aumento;
+        var salario;
+        function calcReajuste(salario) {
+            if (salario <= 280) {
+                novosalario = salario * 1.20;
+                aumento = salario * 0.2;
+                percentual = "20%";
+            } else if (salario > 280 && salario <= 700) {
+                novosalario = salario * 1.15;
+                aumento = salario * 0.15
+                percentual = "15%";
+            } else if (salario > 700 && salario <= 1500) {
+                novosalario = salario * 1.10;
+                aumento = salario * 0.10;
+                percentual = "10%";
+                
+            } else {
+                novosalario = salario * 1.05;
+                aumento = salario * 0.05;
+                percentual = "5%";
+            }
+
+            document.write("Salario antes: " + salario.toFixed(2));
+            document.write("<br>");
+            document.write("Valor do aumento: " + aumento.toFixed(2));
+            document.write("<br>");
+            document.write("% Aplicado: " + percentual);
+            document.write("<br>");
+            document.write("Novo salário: " + novosalario.toFixed(2));
+        }
+
+
+        salario = parseFloat(prompt("Informe seu salário atual: "));
+        calcReajuste(salario); 
+    </script>
+</body>
+
+</html>
