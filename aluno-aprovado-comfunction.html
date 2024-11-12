@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Média de aluno</title>
+    </head>
+    <body>
+        <script>
+
+            function calculaMedia(nota1, nota2){
+                return (nota1 + nota2) / 2
+            }
+
+            var nota1 = parseFloat(prompt("Informe a nota do primeiro semestre: "));
+            var nota2 = parseFloat(prompt("Informe a nota do segundo semestre: "));
+
+            var media = calculaMedia(nota1, nota2);
+            
+
+            if (media >= 7 && media <= 9.9){
+                document.write("APROVADO com média " + media);
+
+            }else if (media < 7){
+                document.write("REPROVADO com média " + media);
+            }else{
+                document.write("Aprovado com Distinção com média " + media);
+            }
+        </script>
+    </body>
+</html>

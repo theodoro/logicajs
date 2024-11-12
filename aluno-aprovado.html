@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Média de aluno</title>
+    </head>
+    <body>
+        <script>
+            var nota1 = parseFloat(prompt("Informe a nota do primeiro semestre: "));
+            var nota2 = parseFloat(prompt("Informe a nota do segundo semestre: "));
+
+            var media = (nota1 + nota2) / 2;
+            
+
+            if (media >= 7 && media <= 9.9){
+                document.write("APROVADO");
+            }else if (media < 7){
+                document.write("REPROVADO");
+            }else{
+                document.write("Aprovado com Distinção");
+            }
+        </script>
+    </body>
+</html>
