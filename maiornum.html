@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Maior numero</title>
+</head>
+
+<body>
+    <script>
+        var maior
+        var menor
+        var num = parseInt(prompt("Informe a primeira idade: "))
+        var num2 = parseInt(prompt("Informe a segunda idade: "))
+        var num3 = parseInt(prompt("Informe a terceira idade: "))
+
+        // Encontrar o Maior
+
+        if (num >= num2 && num >= num3) {
+            maior = num
+        } else if (num2 >= num && num2 >= num3) {
+            maior = num2
+        } else {
+            maior = num3
+        }
+
+        //Encontrar Menor
+
+        if (num <= num2 && num <= num3) {
+            menor = num
+        } else if (num2 <= num && num2 <= num3) {
+            menor = num2
+        } else {
+            menor = num3
+        }
+
+        document.write("O maior numero informado é :" + maior)
+        document.write("<hr>")
+        document.write("O menor numero informado é :" + menor)
+    </script>
+</body>
+
+</html>
