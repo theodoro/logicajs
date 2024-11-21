@@ -10,18 +10,25 @@
 <body>
     <script>
 
-        var anoDeCopa = 1930
+        var anoDeCopa = parseInt(prompt("Informe o ano inicial: "))
+        var anoLimte = parseInt(prompt("Informe o ano limite que seja verficar se há Copa!"))
 
         function mostra(frase) {
             document.write(frase + "<br>")
         }
 
-        while (anoDeCopa <= 2030) {
-            mostra(anoDeCopa + " tem Copa!");
-            anoDeCopa = anoDeCopa + 4
+        if (anoDeCopa < anoLimte) {
+
+            while (anoDeCopa <= anoLimte) {
+                mostra(anoDeCopa + " tem Copa!");
+                anoDeCopa = anoDeCopa + 4
+            }
+            mostra("Ufa! Esses foram os anos de copa até " + anoLimte)
+        } else {
+            mostra("Ano Inicial " + anoDeCopa + "deve ser menor que o ano limite " + anoLimte)
         }
 
-        mostra("Ufa! Esses foram os anos de copa até 2030")
+        //   mostra("Ufa! Esses foram os anos de copa até " + anoLimte)
     </script>
 </body>
 
